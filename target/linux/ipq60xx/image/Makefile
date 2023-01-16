@@ -56,8 +56,6 @@ define Device/glinet_gl-ax1800
 	DEVICE_DTS := qcom-ipq6018-gl-ax1800
 	DEVICE_TITLE := GL.iNet GL-AX1800
 	DEVICE_PACKAGES := \
-	ath11k-wifi-gl-ax1800 \
-	kmod-inet-diag \
 	kmod-usb3 kmod-usb-phy-msm
 	IMAGES += nand-factory.bin
 	IMAGE/nand-factory.bin := append-ubi | qsdk-ipq-factory-nand
@@ -69,10 +67,8 @@ define Device/glinet_gl-axt1800
 	DEVICE_DTS := qcom-ipq6018-gl-axt1800
 	DEVICE_TITLE := GL.iNet GL-AXT1800
 	DEVICE_PACKAGES := \
-	ath11k-wifi-gl-axt1800 \
 	kmod-gl-sdk4-fan \
 	kmod-hwmon-core kmod-hwmon-pwmfan \
-	kmod-inet-diag \
 	kmod-usb3 kmod-usb-phy-msm
 endef
 TARGET_DEVICES += glinet_gl-axt1800
